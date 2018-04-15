@@ -129,12 +129,22 @@ b, strong
 		padding: 6px 18px
 		&::after
 			height: 2px
-.gren-btn
-	background-color: $accent
-	color: #fff
-
-	&:hover
-		background-color: lighten(#fff, 12%)
+.btn-wrapper
+	text-align: center
+	padding: 25px 0 40px 0
+	.green-btn
+		background-color: $accent
+		color: #fff
+		text-align: center
+		z-index: 2
+		&:hover
+			background-color: lighten(#fff, 12%)
+			color: #000
+		&:active
+			background-color: darken($accent, 10%)
+		&:hover, &:focus
+			text-decoration: none
+			color: #222
 		
 .slider-wrap
 	position: relative
@@ -262,7 +272,7 @@ b, strong
 
 
 //End header
-.section-defualt
+.section-default
 	padding-top: 70px
 	.capton-style
 		text-align: center
@@ -336,6 +346,52 @@ b, strong
 		padding-top: 60px
 		.button
 			top: 40px
+
+.section-news
+	position: relative
+	background-repeat: no-repeat
+	.news-wrapper
+		background-image: url("../img/bg-section-3.jpg")
+		background-repeat: no-repeat
+		background-position: bottom
+		.new-news
+			border: 1px solid $accent
+			margin: 10px 20px
+			.news-item
+				background-color: #fff
+			.new-item-img
+				padding: 20px 10px 20px 20px
+				background-size: cover
+				position: relative
+				float: left
+			.news-item
+				span
+					font-size: 12px
+					background-color: $accent
+					color: #fff
+					padding: 5px 80px 5px 10px
+					text-align-last: auto
+					margin-left: -10px
+				p
+					font-family: "roboto-example"
+					font-size: 12px
+					padding-left: 10px
+					padding-top: 5px
+					margin-right: 37px
+				&-text
+					padding-top: 18px
+					padding-left: 30px
+			.btn
+				padding: 15px 162px
+				.button
+					padding: 5px 44px
+					box-shadow: 0 8px 10px -6px rgba(50,50,50,.75)
+
+			.info
+				position: absolute
+				padding-left: 10px
+				padding-top: 1px
+
 
 
 
