@@ -121,9 +121,6 @@ b, strong
 
 	&:active
 		background-color: darken($accent, 10%)
-
-	
-
 	&:hover, &:focus
 		text-decoration: none
 		color: #222
@@ -132,6 +129,12 @@ b, strong
 		padding: 6px 18px
 		&::after
 			height: 2px
+.gren-btn
+	background-color: $accent
+	color: #fff
+
+	&:hover
+		background-color: lighten(#fff, 12%)
 		
 .slider-wrap
 	position: relative
@@ -259,7 +262,15 @@ b, strong
 
 
 //End header
-
+.section-defualt
+	padding-top: 70px
+	.capton-style
+		text-align: center
+		text-transform: uppercase
+		span
+			color: #fff
+			background-color: $accent
+			padding-left: 60px
 .section-1
 	position: relative
 	.claster-tascs-wrapper
@@ -270,19 +281,12 @@ b, strong
 			background-size: cover
 			position: absolute
 			top: 0
-			left: 0
-			bottom: 0
+			left: 70px
+			bottom: 10px
 			right: 0
 			opacity: .20
+	
 
-	.capton-style
-		text-align: center
-		text-transform: uppercase
-
-		span
-			color: #fff
-			background-color: $accent
-			padding-left: 60px
 
 	.claster-img
 		padding: 10px
@@ -324,6 +328,14 @@ b, strong
 			margin-right: 10px
 			position: absolute
 			left: -40px
+
+.section-advantages
+	position: relative
+	.advantages-content
+		text-align: center
+		padding-top: 60px
+		.button
+			top: 40px
 
 
 
