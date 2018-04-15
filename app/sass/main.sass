@@ -1,0 +1,345 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	&.ishome
+		.site-header
+			min-height: 700px
+			.top-line
+				padding-top: 40px
+				position: relative
+				width: 100%
+				z-index: 1
+				border-bottom: 1px solid $accent
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+//Start header
+
+.menu-wrapper
+	border-bottom: 1px solid $accent
+	position: relative
+	.logo-wrapper
+		position: relative
+		
+		.logo
+			position: absolute
+			right: 100px
+			img
+				width: 115px
+				height: auto
+
+		
+
+.first-menu
+	color: $accent
+	position: relative
+	top: 20px	
+	.icons
+		padding-bottom: 20px
+		list-style-type: none
+		li
+			display: inline-block
+			margin: 0 25px
+		.lang
+			text-align: center
+			
+			a
+				border: 1px solid $accent
+				text-decoration: none
+				color: $accent
+				padding: 0px 5px
+			.fa
+				width: 10px
+				color: $accent
+				padding-left: 5px
+				position: absolute
+
+.my-menu
+	position: relative
+	li
+		text-decoration: none
+		display: inline-block	
+		a
+			margin: 0 50px
+			color: $accent
+		&::before
+			content: ''
+			width: 10px
+			height: 10px
+			border: 1px solid $accent
+			position: absolute
+			bottom: 8px
+
+.my-menu-wrapper
+	position: relative
+
+.button
+	color: $accent
+	background-color: #fff
+	font-size: em(16px)
+	padding: 10px 53px
+	position: relative
+	transition: background-color .25s ease
+	border: 1px solid $accent
+	&:hover
+		background-color: lighten($accent, 12%)
+
+	&:active
+		background-color: darken($accent, 10%)
+
+	
+
+	&:hover, &:focus
+		text-decoration: none
+		color: #222
+	&-small
+		font-size: em(14px)
+		padding: 6px 18px
+		&::after
+			height: 2px
+		
+.slider-wrap
+	position: relative
+	padding-bottom: 10px
+	border-bottom: 1px solid $accent
+
+	.slider-nav-container
+		position: relative
+
+		.slider-nav
+			position: absolute
+			width: 100%
+			z-index: 2
+			top: 250px
+			div
+				cursor: pointer
+				position: absolute
+				top: 390px
+				right: 40px
+				&:last-child
+					right: 0
+
+
+.slider
+	top: 0
+	width: 100%
+	overflow-x: hidden
+	.owl-dots
+		position: absolute
+		bottom: 10px
+		width: 100%
+		text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 10px
+			width: 18px
+			height: 18px
+			border: 2px solid #f9f6ef
+			border-radius: 10em
+			cursor: pointer
+			transition: background-color .25s ease
+			&.active
+				background-color: $accent
+	.slide-wrap
+		float: left
+		&.active
+			h2
+				opacity: 1
+				left: 0
+			p
+				left: 0
+				opacity: 1
+			.slide-img-wrap
+				opacity: 1
+				transform: scale(1)
+	.slide
+		color: #fff 
+		padding-bottom: 130px
+		position: relative
+		padding-top: 570px
+		
+		h2
+			font-family: "roboto-example", sans-serif
+			font-weight: 400
+			font-size: 68px
+			line-height: 1
+			margin-top: 30px
+			margin-bottom: 25px
+			position: relative
+			left: 100px
+			opacity: 0
+			transition: all 1s ease
+			z-index: 2
+		p
+			font-family: "RobotoRegular", sans-serif
+			opacity: .75
+			margin-bottom: 76px
+			position: relative
+			left: 50px
+			opacity: 0
+			transition: all 1.5s ease
+			transition-deley: .15s
+			z-index: 2
+
+		&-content
+			padding-left: 50px
+
+
+
+			&-text
+				position: absolute
+				bottom: 0
+				padding-left: 100px
+				&::before
+					content: ''
+					height: 220px
+					width: 5px
+					position: absolute
+					background-color: #fff
+					z-index: 2
+					top: 28px
+					left: 70px
+
+				&::after
+					content: ''
+					height: 280px
+					width: 700px
+					top: 0
+					background-color: $accent
+					opacity: .75
+					position: absolute
+					left: -15px
+					z-index: 1
+		&-bg
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			background-size: cover
+			height: 555px
+
+
+		&-content
+			position: relative
+
+
+//End header
+
+.section-1
+	position: relative
+	.claster-tascs-wrapper
+		position: relative
+		&::before
+			content: ''
+			background-image: url(../img/spikeles.png)
+			background-size: cover
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			opacity: .20
+
+	.capton-style
+		text-align: center
+		text-transform: uppercase
+
+		span
+			color: #fff
+			background-color: $accent
+			padding-left: 60px
+
+	.claster-img
+		padding: 10px
+		text-align: center
+
+		img
+			height: 195px
+			width: 195px
+			border: 1px solid $accent
+			margin: 2px 10px
+
+	.tascs-right
+		position: absolute
+		padding-top: 13px
+		p
+			text-align: right
+			font-size: 18px
+			margin: 40px 4px
+		&::before
+			content: ''
+			background-color: $accent
+			height: 195px
+			width: 5px
+			position: absolute
+			right: -25px
+
+	.tascs-left
+		position: absolute
+		padding-top: 13px
+		p
+			font-size: 18px
+			margin: 40px -6px
+
+		&::before
+			content: ''
+			background-color: $accent
+			height: 195px
+			width: 5px
+			margin-right: 10px
+			position: absolute
+			left: -40px
+
+
+
+
+
+
+
+// .slide-img-wrap
+// 	padding-top: 12px
+// 	opacity: 0
+// 	transform: scale(.8)
+// 	transition: all 1s 
+// 	transition-deley: .25s
+// 	img
+// 		max-width: 100%
+	
+
+
+@import "media" // Always at the end
