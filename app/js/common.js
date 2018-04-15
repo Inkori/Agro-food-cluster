@@ -17,4 +17,6 @@ $(function() {
 		owl.trigger('next.owl.carousel');
 	});
 
+	$(".participants-item").equalHeights();
+
 });
