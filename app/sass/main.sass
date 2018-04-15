@@ -131,7 +131,7 @@ b, strong
 			height: 2px
 .btn-wrapper
 	text-align: center
-	padding: 25px 0 40px 0
+	padding: 25px 0 55px 0
 	.green-btn
 		background-color: $accent
 		color: #fff
@@ -349,11 +349,13 @@ b, strong
 
 .section-news
 	position: relative
-	background-repeat: no-repeat
+	padding-bottom: 50px
+	border-bottom: 1px solid $accent
 	.news-wrapper
 		background-image: url("../img/bg-section-3.jpg")
 		background-repeat: no-repeat
 		background-position: bottom
+
 		.new-news
 			border: 1px solid $accent
 			margin: 10px 20px
@@ -393,12 +395,16 @@ b, strong
 				padding-top: 1px
 .section-participants
 	position: relative
+	border-bottom: 1px solid $accent
+
 	h2
 		text-align: center
 		text-transform: uppercase				
 	.participants-wrapper
 		text-align: center
 		padding: 30px
+		
+
 		.participants-item
 			text-align: center
 			padding-top: 10px
@@ -407,11 +413,63 @@ b, strong
 		.btn-wrapper
 			.button
 				padding: 10px 20px
+				box-shadow: 0 8px 10px -8px rgba(50,50,50,.75)
 			.green-btn
 				padding: 10px 30px
 				margin: 20px
 
-
+.soc-section
+	position: relative
+	border-bottom: 1px solid $accent
+	text-align: center
+	padding-top: 10px
+	h2
+		text-transform: uppercase
+		font-size: 20px
+		text-align: center
+		font-family: "roboto-example", sans-serif
+		font-weight: 400
+		padding-top: 20px
+	.soc-wrapper
+		position: relative
+		margin-top: -40px
+		.soc
+			margin: auto
+			ul, li
+				list-style-type: none
+				display: inline-block
+				margin: 0 40px
+				text-align: center
+			a
+				color: $accent
+				font-size: 64px
+				display: block
+				text-align: center
+				margin: 18px 0
+				transition: font-size .15s ease 
+				.fa
+					&:hover
+						font-size: 74px
+					&:active
+						font-size: 54px
+.callback
+	background-color: $accent
+	.formhead
+		margin-top: 12px
+		font-size: 22px
+		color: #fff
+		text-transform: uppercase
+	input, textarea, select,
+	.selectize-control .selectize-input,
+	.selectize-control.single .selectize-input.input-active
+		color: #000
+		width: 450px
+		padding: 5px 0 5px 35px
+	.button
+		padding: 5px 53px
+		margin-bottom: 20px
+	
+		
 
 
 
