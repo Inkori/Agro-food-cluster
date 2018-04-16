@@ -5,42 +5,226 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
+	.first-menu 
+		.icons 
+			li
+				margin: 0 15px
+	.my-menu 
+		li
+			margin-left: 70px
+	.slider
+		.slide-content-text
+			&::before
+				height: 165px
+				width: 3px
 
+			&::after
+				width: 650px
+				height: 220px
+		.slide
+			h2
+				font-size: 45px
+			p
+				margin-bottom: 90px
+				font-size: 14px
+		.slide-content
+			padding-left: 15px
+	
+	.section-news 
+		.news-wrapper 
+			.new-news
+				margin: 10px 0
+				.news-item 
+					p
+						font-size: 11px
+				.new-item-img
+					width: 250px 
+				.btn
+					padding: 15px 60px
+					.button
+						padding: 4px 30px
+			.info 
+				img
+					width: 20px
+					
+
+			
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-	.logo
-		right: 30px
+	.menu-wrapper 
+		.logo-wrapper 
+			.logo
+				right: 0
 	.first-menu
+		text-align: right
 		li
 			margin: 0 15px
+	.my-menu 
+		li
+			margin-left: 70px
+	.section-1
+		.claster-tascs-wrapper
+			padding-right: 55px 
+			.tascs-right 
+				p
+					font-size: 14px
+					margin: 0px -10px
+				&::before
+					height: 155px
+			.tascs-left 
+				p
+					font-size: 14px
+					margin: 0px -10px
+				&::before
+					height: 155px
+			.claster-img 
+				img
+					height: 160px
+					width: 160px
+					margin: 0px 0px
+	.section-news 
+		.news-wrapper 
+			.new-news
+				.new-item-img
+					img
+						width: 300px 
+				.news-item 
+					p
+						font-size: 12px
+				.btn
+					padding: 20px 57px
+	.my-footer 
+		.soc-section 
+			.soc-wrapper 
+				.soc
+					font-size: 34px
+					li
+						margin: 0 25px 
 
+
+	
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
 	.logo
-		left: 20px
+		right: 50px
+	.first-menu
+		text-align: right
+	
+		.slide-content-text
+			bottom: 60px
+			&::before
+				height: 145px
+				left: 30px
+				padding-left: 45px 
+		.slide 
+			h2
+				font-size: 35px
+	.my-footer 
+		.soc-section
+			h2
+				&:first-child
+					padding-left: 33px 
+			.soc-wrapper 
+				.soc
+					font-size: 22px
+					li
+						margin: 20px 15px 
+		.callback
+			text-align: left
+			h3
+				font-size: 20px 
+			input
+				width: 250px
+			button
+				left: 259px
+				bottom: 38px
+	.my-footer 
+		.main-footer
+			font-size: 12px
+
+
+
+
+	
+
+
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	.first-menu 
-		top: 0
-		.icons 
+	.first-menu
+		.icons
 			li
-				margin: 0 15px
+				font-size: 20px 
+				padding-right: 25px
+				img
+					width: 30px
+	.slider
+		.slide-content-text
+			&::before
+				height: 135px
+				width: 3px
+			&::after
+				width: 400px
+				height: 200px
+		.slide 
+			h2
+				font-size: 24px
+				margin-bottom: 10px
+			p
+				font-size: 12px
+	.button
+		padding: 5px 38px
+	.section-1
+		.claster-tascs-wrapper 
+			.claster-img
+				display: inline-grid
+				margin: 10px
+				a
+					margin-left: 70px
+					margin-bottom: 10px
+			.tascs-right
+				top: 10px 
+				p
+					margin-left: 290px
+					text-align: left
+				&::before
+					right: 123px
+					top: 15px
+			.tascs-left
+				bottom: 30px
+				p
+					margin-left: 290px
+					text-align: left
+					margin-bottom: 50px
+				&::before
+					left: 262px
+					bottom: 3px
+	.section-news 
+		.news-wrapper 
+			.new-news
+				.new-item-img
+				.news-item
+					p
+						font-size: 10px
+	.my-footer 
+		.main-footer
+			text-align: center
+
+	
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-	.logo
-		img
-			width: 75px
-	.first-menu
-		.icons 
-			img
-				width: 20px
+	.slide
+		h2
+			font-size: 35px
 
+			
 	
 
 /*==========  Mobile First  ==========*/
