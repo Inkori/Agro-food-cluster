@@ -63,6 +63,57 @@ b, strong
 				width: 115px
 				height: auto
 
+
+//superfish dropdown menu Start
+select, .selectize-control .selectize-input,
+.selectize-control.single .selectize-input.input-active
+	position: absolute
+	top: -16px
+	right: 2px
+	background-color: transparent
+	border: $accent 1px solid
+	border-radius: 2px
+	padding: 0 8px
+	outline: none
+	display: inline-block
+	font-size: 16px
+	color: $accent
+select
+	padding: 12px 7px
+
+.selectize-control .selectize-input
+	box-shadow: none
+	overflow: inherit
+	line-height: inherit
+	text-align: left
+	width: 35px
+	height: 25px
+	input
+		font-size: 16px
+	&.dropdown-active::before
+		background-color: transparent
+.selectize-control.single
+	.selectize-input, &.dropdown-active
+		&::after
+			border: none
+			content: '\f107'
+			font-family: fontawesome
+			position: absolute
+			right: -10px
+			top: 0px
+		&.dropdown-active::after
+			content: '\f106'
+	.selectize-dropdown
+		font-size: 15px
+		border: none
+		border-radous: 0
+		text-align: left
+		&-content
+			.option
+				padding: 0 8px
+				&.active
+					background-color: lighten($accent, 15)
+//superfish dropdown menu Start
 		
 
 .first-menu
@@ -71,10 +122,10 @@ b, strong
 	top: 20px	
 	.icons
 		padding-bottom: 20px
-		list-style-type: none
 		li
 			display: inline-block
 			margin: 0 25px
+			list-style-type: none
 		.lang
 			text-align: center
 			
@@ -88,6 +139,8 @@ b, strong
 				color: $accent
 				padding-left: 5px
 				position: absolute
+
+
 
 .my-menu
 	position: relative
@@ -122,6 +175,8 @@ b, strong
 .my-menu-wrapper
 	position: relative
 
+
+//all buttons
 .button
 	color: $accent
 	background-color: #fff
@@ -160,6 +215,9 @@ b, strong
 			text-decoration: none
 			color: #222
 		
+
+
+//slider start
 .slider-wrap
 	position: relative
 	padding-bottom: 10px
@@ -285,6 +343,8 @@ b, strong
 		&-content
 			position: relative
 
+//slider end
+
 
 //End header
 .section-default
@@ -359,6 +419,9 @@ b, strong
 	.advantages-content
 		text-align: center
 		padding-top: 60px
+		opacity: 0
+		&.on
+			opacity: 1
 		.button
 			top: 40px
 
@@ -507,6 +570,9 @@ b, strong
 			a
 				text-decoration: none
 				color: #2b2b2b
+				&:hover
+					color: $accent
+
 			.fa
 				color: $accent
 				font-size: 18px
@@ -529,7 +595,7 @@ b, strong
 .top
 	position: fixed
 	bottom: 25px
-	right: 0
+	right: -100px
 	background-color: $accent
 	z-index: 12
 	border-radius: 10em

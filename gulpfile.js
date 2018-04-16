@@ -28,6 +28,7 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/selectize/js/standalone/selectize.min.js',
 		'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'app/libs/equalheights/equalheights.js',
 		'app/libs/superfish/dist/js/superfish.min.js',
